@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Coupon.destroy_all
+
+puts "making seed data"
+Coupon.create(coupon_code: "1", store: "Macys")
+Coupon.create(coupon_code: "2", store: "Amazon")
+Coupon.create(coupon_code: "3", store: "Target")
+puts "completed seed data"
